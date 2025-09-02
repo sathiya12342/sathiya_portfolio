@@ -11,6 +11,8 @@ body {
   background-color: #0c0c1e;
   color: #ffffff;
   scroll-behavior: smooth;
+  overflow-x: hidden;  
+  overflow-y: auto;  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,11 +43,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 2rem;
   background: rgba(255, 255, 255, 0.267);
   backdrop-filter: blur(10px);
-  position: sticky;
+  position: fixed;   /* changed from sticky */
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  animation: slideDown 0.8s ease forwards;
 }
+
 
 @keyframes slideDown {
   from {
@@ -602,7 +606,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Scroll viewport */
 .projects-viewport {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden; 
+  overflow-y: visible; 
   position: relative;
   user-select: none;
   cursor: grab;

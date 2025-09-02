@@ -1,4 +1,3 @@
-// Scripts.js
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Scripts.js loaded");
 
