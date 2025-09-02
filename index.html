@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">Portfolio SP</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#about">Education</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <video autoplay muted loop class="background-video">
+    <source src="./videos/4828605-hd_1366_720_25fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+    <div class="home-content">
+      <h1 class="fade-in">Hi, I'm <span>SathiyaPriya</span></h1>
+      <h2 class="slide-up" id="typing-text"></h2>
+      <p class="fade-in-delay">I’m a passionate Full Stack Python Developer (Fresher), skilled in frontend and backend development using Django, React JS, HTML, CSS, and more.</p>
+      <div class="btn-group">
+        <a href="#projects" class="btn1">View Projects</a>
+        <a href="#contact" class="btn1 outline">Hire Me</a>
+      </div>
+      <div class="home-sci a">
+        <a href="https://www.linkedin.com/in/sathiyapriya2002/" target="_blank"><i class="fab fa-linkedin" title="linkedin"></i></a>
+        <a href="https://github.com/sathiya12342" target="_blank"><i class="fab fa-github" title="github"></i></a>
+        <a href="https://www.naukri.com/mnjuser/profile" target="_blank"><i class="fas fa-briefcase" title="Naukri"></i></a>
+      </div>
+    </div>
+    <!-- <div class="profile-photo-3d">
+        <img src="./images/sathiyaphoto.jpg" alt="Profile photo" id="mainPhoto">
+      </div> -->
+  </section>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title fade-in">About Me</h1>
+                <p class="para slide-up">
+                    I'm <strong>SathiyaPriya</strong>, a passionate <strong>Full Stack Python Developer</strong>. 
+                    I specialize in creating modern, responsive web applications using technologies such as 
+                    <strong>Python, Django, ReactJS, JavaScript, HTML, CSS</strong>, and more. 
+                    I'm enthusiastic about writing clean, maintainable code and building beautiful, user-friendly interfaces.
+                </p>
+                <a href="./images/Sathiyapriya_Fresher_PythonFullStackDeveloper.pdf" download="" class="btn2 bounce">Download CV</a>
+            </div>
+
+            <div class="about-col-2">
+                <center>
+                    <div class="tab-titles">
+                        <p class="tablinks active-link" data-target="skills"><span class="coll1">Skills</span></p>
+                        <p class="tablinks" data-target="education"><span class="coll2">Education</span></p>
+                    </div>
+                </center>
+
+                <div class="tabcontents active-tab" id="skills">
+                    <div class="skills__container container grid">
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/python.png" alt="python">
+                            <div class="skills__container-name">Python</div>
+                        </div>
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/django.png" alt="Django_Framework">
+                            <div class="skills__container-name">Django</div>
+                        </div>
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/html5.png" alt="HTML5">
+                            <div class="skills__container-name">HTML5</div>
+                        </div>
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/css.png" alt="CSS3">
+                            <div class="skills__container-name">CSS3</div>
+                        </div>
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/javascript.jpg" alt="javascript">
+                            <div class="skills__container-name">Javascript</div>
+                        </div>
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img img11" src="./images/reactjs.png" alt="reactjs">
+                            <div class="skills__container-name">ReactJS</div>
+                        </div> 
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/bootstrap.png" alt="bootstrap">
+                            <div class="skills__container-name">Bootstrap</div>
+                        </div>
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/mysql1.png" alt="mysql">
+                            <center><div class="skills__container-name">MySQL</div></center>
+                        </div>
+
+                        <div class="skills__container-box zoom-in">
+                            <img class="skills__container-img" src="./images/github_1051377.png" alt="github">
+                            <div class="skills__container-name">Github</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabcontents" id="education">
+                    <ul class="fade-in">
+                        <li>Annamalai University - 8.41 CGPA<br>Master Degree of Computer Science<br>Year : 2022 - 2024</li><br>
+                        <li>Shree Ragavendra Arts and Science College - 80%<br>Bachelor Degree of Computer Science<br>Year : 2019 - 2022</li><br>
+                        <li>Govt Girls Higher Secondary School - 52.6%<br>HSC (12th Standard)<br>Year : 2018 - 2019</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    <!-- project section -->
+
+ <section id="projects" class="projects-section">
+   <video autoplay muted loop class="background-video">
+    <source src="./videos/5527786-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-viewport">
+    <div class="projects-track">
+      <article class="project-card" data-animate>
+        <div class="card-image">
+          <img src="./images/Copilot_20250610_222515.png" alt="Project 1">
+          <div class="card-overlay">
+            <a href="https://github.com/sathiya12342/Greencart" target="_blank" class="btn">View Code</a>
+            <a href="https://github.com/sathiya12342/Greencart/tree/main/Greencart" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <h3>GreenCart</h3>
+        <p>Eco-friendly e-commerce platform built with Django.</p>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="card-image">
+          <img src="./images/petshop.jpg" alt="Project 2">
+          <div class="card-overlay">
+            <a href="https://github.com/sathiya12342/PetAdaption-Shop" target="_blank" class="btn">View Code</a>
+            <a href="https://magical-quokka-2fd54e.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <h3>PetShop&Adaption Website</h3>
+        <p>A React JS-based pet shop and adoption platform with dynamic product listings and user-friendly adoption features.</p>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="card-image">
+          <img src="./images/banking.jpg" alt="Project 2">
+          <div class="card-overlay">
+            <a href="https://github.com/sathiya12342/Digital-Banking-Locker-System" target="_blank" class="btn">View Code</a>
+            <a href="https://github.com/sathiya12342/Digital-Banking-Locker-System" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <h3>Digital Banking System</h3>
+        <p>Secure banking locker system with PIN & OTP.</p>
+      </article>
+
+       <article class="project-card" data-animate>
+        <div class="card-image">
+          <img src="./images/festival1.jpg" alt="Project 2">
+          <div class="card-overlay">
+            <a href="https://github.com/sathiya12342/indian_fest_guide" target="_blank" class="btn">View Code</a>
+            <a href="https://sathiya12342.github.io/indian_fest_guide/" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <h3>Indian Festival Guide</h3>
+        <p>Multi-page site featuring state-wise Indian festivals with colorful, interactive cards.</p>
+      </article>
+
+       <article class="project-card" data-animate>
+        <div class="card-image">
+          <img src="./images/skill.jpg" alt="Project 2">
+          <div class="card-overlay">
+            <a href="https://github.com/sathiya12342/Skill-Swaping-Registration-platform" target="_blank" class="btn">View Code</a>
+            <a href="https://github.com/sathiya12342/Skill-Swaping-Registration-platform" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <h3>Skill Swapping Registeration Platform</h3>
+        <p>A Tkinter-based application that allows users to register their skills and get matched with others to exchange knowledge.</p>
+      </article>
+
+       <article class="project-card" data-animate>
+        <div class="card-image">
+          <img src="./images/ngo.jpg" alt="Project 2">
+          <div class="card-overlay">
+            <a href="https://github.com/sathiya12342/NGO" target="_blank" class="btn">View Code</a>
+            <a href="https://sathiya12342.github.io/NGO/" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <h3>NGO Website</h3>
+        <p>A responsive website built with HTML, CSS, and JavaScript to showcase NGO initiatives, programs, and donation drives.</p>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="card-image">
+          <img src="./images/bootstrap1.jpg" alt="Project 2">
+          <div class="card-overlay">
+            <a href="https://github.com/sathiya12342/Bootstrap_project" target="_blank" class="btn">View Code</a>
+            <a href="https://sathiya12342.github.io/Bootstrap_project/" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <h3>Bootstrap Project</h3>
+        <p>Responsive website built with Bootstrap showcasing mobile-first design and modern UI components.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS SECTION ===================== -->
+<section id="Skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <!-- Core Frontend Skills -->
+
+       <div class="skill-card">
+        <h3>Core Backend Skills</h3>
+        <ul>
+          <li>Python</li>
+          <li>Django</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Core Frontend Skills</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <!-- Styling & Design -->
+      <div class="skill-card">
+        <h3>Styling & Design</h3>
+        <ul>
+          <li>Responsive Design</li>
+          <li>Bootstrap 5</li>
+          <li>CSS Animations & Transitions</li>
+        </ul>
+      </div>
+
+      <!-- Frameworks & Libraries -->
+      <div class="skill-card">
+        <h3>Frameworks & Libraries</h3>
+        <ul>
+          <li>React JS</li>
+          <li>Django</li>
+          <li>Tkinter</li>
+        </ul>
+      </div>
+
+      <!-- Tools & Version Control -->
+      <div class="skill-card">
+        <h3>Build Tools & Version Control</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>VS Code</li>
+          <li>MySQL / SQLite</li>
+        </ul>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem-Solving</li>
+          <li>Attention to Detail</li>
+          <li>Communication & Teamwork</li>
+          <li>Adaptability & Quick Learner</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT SECTION ===================== -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="header">
+      <h2>Contact <span>Me</span></h2>
+      <p class="lead">Have a project, job opportunity, or just want to say hi? Drop a message and I’ll get back to you.</p>
+    </div>
+
+    <div class="grid1">
+      <!-- Left: Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>📍 Location: Erode, India</p>
+        <p>📞 Phone: +91 8248129121</p>
+        <p>📧 Email: sathiyajayasankar195@gmail.com</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/sathiyapriya2002/" target="_blank"><i class="fab fa-linkedin" title="linkedin"></i></a>
+          <a href="https://github.com/sathiya12342" target="_blank"><i class="fab fa-github" title="github"></i></a>
+          <a href="https://www.naukri.com/mnjuser/profile" target="_blank"><i class="fas fa-briefcase" title="Naukri"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER SECTION ===================== -->
+<footer>
+  <div class="footer-container" id="footer-copy">
+    <p>© 2025 J. SathiyaPriya | Python Full Stack Developer</p>
+    <p>Made with ❤️ using HTML, CSS, JavaScript</p>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./Scripts.js"></script>
+</body>
+
+</html>
