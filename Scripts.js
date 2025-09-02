@@ -1,6 +1,6 @@
 // Scripts.js
-// document.addEventListener("DOMContentLoaded", () => {
-//   console.log("Scripts.js loaded");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Scripts.js loaded");
 
 // ---------- TYPING EFFECT (Infinite Loop) ----------
 const text = "Fresher | Full Stack Python Developer";
@@ -69,32 +69,35 @@ if (typingElement) {
       setTimeout(() => { if (pending > 0) startMarquee(); }, 2000);
     }
 
-    function startMarquee() {
-      // measure the width of the original set (half of track after cloning)
-      let originalWidth = track.scrollWidth / 2;
-      if (!originalWidth || originalWidth < 10) {
-        const kids = Array.from(track.children);
-        const half = Math.floor(kids.length / 2);
-        originalWidth = kids.slice(0, half).reduce((sum, el) => sum + el.getBoundingClientRect().width, 0);
-      }
-      console.log("Marquee start, width:", originalWidth);
+   function startMarquee() {
+  // measure the width of the original set (half of track after cloning)
+  let originalWidth = track.scrollWidth / 2;
+  if (!originalWidth || originalWidth < 10) {
+    const kids = Array.from(track.children);
+    const half = Math.floor(kids.length / 2);
+    originalWidth = kids.slice(0, half).reduce((sum, el) => sum + el.getBoundingClientRect().width, 0);
+  }
+  console.log("Marquee start, width:", originalWidth);
 
-      // animation state
-      let offset = 0;
-      let last = performance.now();
-      let isPaused = false;
-      const speed = 40; // px per second — tweak to change speed
+  // animation state
+  let offset = 0;
+  let last = performance.now();
+  let isPaused = false;
+  const speed = 40; // px per second — tweak to change speed
 
-      function frame(now) {
-        const dt = now - last;
-        last = now;
-        if (!isPaused && originalWidth > 0) {
-          offset += (speed * dt) / 1000;
-          if (offset >= originalWidth) offset -= originalWidth;
-          track.style.transform = `translateX(-${offset}px)`;
-        }
-        requestAnimationFrame(frame);
-      }
+  // ✅ reset transform before animation loop
+  track.style.transform = "translateX(0)";
+
+  function frame(now) {
+    const dt = now - last;
+    last = now;
+    if (!isPaused && originalWidth > 0) {
+      offset += (speed * dt) / 1000;
+      if (offset >= originalWidth) offset -= originalWidth;
+      track.style.transform = `translateX(-${offset}px)`;
+    }
+    requestAnimationFrame(frame);
+  }
 
       // Pause on hover/touch
       viewport.addEventListener("mouseenter", () => { isPaused = true; viewport.classList.add("paused"); });
@@ -191,4 +194,4 @@ if (typingElement) {
   if (footerFirstP) {
     footerFirstP.textContent = `© ${new Date().getFullYear()} J. SathiyaPriya | Python Full Stack Developer`;
   }
-// });
+});
