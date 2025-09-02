@@ -1,6 +1,6 @@
 // Scripts.js
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Scripts.js loaded");
+// document.addEventListener("DOMContentLoaded", () => {
+//   console.log("Scripts.js loaded");
 
 // ---------- TYPING EFFECT (Infinite Loop) ----------
 const text = "Fresher | Full Stack Python Developer";
@@ -191,4 +191,4 @@ if (typingElement) {
   if (footerFirstP) {
     footerFirstP.textContent = `© ${new Date().getFullYear()} J. SathiyaPriya | Python Full Stack Developer`;
   }
-});
+// });
